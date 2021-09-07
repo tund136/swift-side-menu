@@ -9,7 +9,19 @@ import SwiftUI
 
 struct SideMenuOptionView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 12) {
+            Image(systemName: "person.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 20, height: 20)
+                
+            Text("Profile")
+                .font(.title3)
+                .fontWeight(.semibold)
+            
+            Spacer()
+        }
+        .padding()
     }
 }
 

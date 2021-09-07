@@ -8,24 +8,27 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var isShowing = false
+    
     var body: some View {
         NavigationView {
             ZStack {
-                Color(.white)
-                
-                Text("Hello!")
+                if isShowing {
+                    SideMenuView(isShowing: $isShowing)
+                }
+                ExtractedView()
+                    .cornerRadius(isShowing ? 20 : 0)
+                    .offset(x: isShowing ? 300 : 0, y: isShowing ? 44 : 0)
+                    .scaleEffect(isShowing ? 0.8 : 1)
+                    .navigationBarItems(leading: Button(action: {
+                        withAnimation(.spring()) {
+                            isShowing.toggle()
+                        }
+                    }, label: {
+                        SmallAvatar(imageName: "tu", size: 36)
+                    }))
+                    .navigationBarTitle("Home", displayMode: .inline)
             }
-            .navigationBarItems(leading: Button(action: {
-                print("DEBUG: Show menu here...")
-            }, label: {
-                Image("tu")
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundColor(.white)
-                    .frame(width: 50, height: 50)
-                    .cornerRadius(50)
-            }))
-            .navigationBarTitle("Home", displayMode: .automatic)
         }
     }
 }
@@ -33,5 +36,15 @@ struct HomeView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+    }
+}
+
+struct ExtractedView: View {
+    var body: some View {
+        ZStack {
+            Color(.white)
+            
+            Text("Home View")
+        }
     }
 }

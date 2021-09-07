@@ -8,13 +8,62 @@
 import SwiftUI
 
 struct SideMenuHeaderView: View {
+    @Binding var isShowing: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .topTrailing) {
+            
+            Button(action: {
+                withAnimation(.spring()) {
+                    isShowing.toggle()
+                }
+            }, label: {
+                Image(systemName: "xmark")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 24, height: 24)
+                    .foregroundColor(.white)
+                    .padding()
+            })
+            
+            VStack(alignment: .leading) {
+                SmallAvatar(imageName: "tu", size: 52)
+                    .padding(.bottom, 16)
+                
+                Text("Tu Nguyen")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                
+                Text("@tund")
+                    .font(.subheadline)
+                    .padding(.bottom, 32)
+                
+                HStack (spacing: 12) {
+                    HStack {
+                        Text("1306")
+                            .bold()
+                            
+                        Text("following")
+                    }
+                    
+                    HStack {
+                        Text("603")
+                            .bold()
+                        
+                        Text("followers")
+                    }
+                    Spacer()
+                }
+                
+                Spacer()
+            }
+            .padding()
+        }
     }
 }
 
 struct SideMenuHeader_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuHeaderView()
+        SideMenuHeaderView(isShowing: .constant(true))
     }
 }

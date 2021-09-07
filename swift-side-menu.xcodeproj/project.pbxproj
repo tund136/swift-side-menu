@@ -15,6 +15,7 @@
 		ADB36F1926E7235800F94744 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB36F1826E7235800F94744 /* SideMenuHeaderView.swift */; };
 		ADB36F1B26E7238000F94744 /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB36F1A26E7238000F94744 /* SideMenuOptionView.swift */; };
 		ADB36F1D26E723EF00F94744 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB36F1C26E723EF00F94744 /* SideMenuViewModel.swift */; };
+		ADB36F2026E750BB00F94744 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB36F1F26E750BB00F94744 /* Avatar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ADB36F1826E7235800F94744 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 		ADB36F1A26E7238000F94744 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		ADB36F1C26E723EF00F94744 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		ADB36F1F26E750BB00F94744 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		ADB36F0326E71FC700F94744 /* swift-side-menu */ = {
 			isa = PBXGroup;
 			children = (
+				ADB36F1E26E750A300F94744 /* Utilities */,
 				ADB36F0426E71FC700F94744 /* swift_side_menuApp.swift */,
 				ADB36F1726E7232E00F94744 /* ViewModel */,
 				ADB36F1626E7232900F94744 /* View */,
@@ -103,6 +106,14 @@
 				ADB36F1C26E723EF00F94744 /* SideMenuViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADB36F1E26E750A300F94744 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ADB36F1F26E750BB00F94744 /* Avatar.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 				ADB36F0726E71FC700F94744 /* HomeView.swift in Sources */,
 				ADB36F1926E7235800F94744 /* SideMenuHeaderView.swift in Sources */,
 				ADB36F1B26E7238000F94744 /* SideMenuOptionView.swift in Sources */,
+				ADB36F2026E750BB00F94744 /* Avatar.swift in Sources */,
 				ADB36F1D26E723EF00F94744 /* SideMenuViewModel.swift in Sources */,
 				ADB36F0526E71FC700F94744 /* swift_side_menuApp.swift in Sources */,
 			);
