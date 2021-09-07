@@ -22,8 +22,8 @@ struct SideMenuView: View {
                     .frame(height: 240)
                 
                 // Cell items
-                ForEach(0..<6) { _ in
-                    SideMenuOptionView()
+                ForEach(SideMenuViewModel.allCases, id: \.self) { option in
+                    SideMenuOptionView(viewModel: option)
                 }
                 .foregroundColor(.white)
             
