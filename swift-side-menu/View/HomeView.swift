@@ -29,6 +29,9 @@ struct HomeView: View {
                     }))
                     .navigationBarTitle("Home", displayMode: .inline)
             }
+            .onAppear {
+                isShowing = false
+            }
         }
     }
 }

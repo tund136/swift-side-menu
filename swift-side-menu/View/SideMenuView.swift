@@ -23,7 +23,11 @@ struct SideMenuView: View {
                 
                 // Cell items
                 ForEach(SideMenuViewModel.allCases, id: \.self) { option in
-                    SideMenuOptionView(viewModel: option)
+                    NavigationLink(
+                        destination: Text(option.title),
+                        label: {
+                            SideMenuOptionView(viewModel: option)
+                        })
                 }
                 .foregroundColor(.white)
             
