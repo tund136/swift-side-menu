@@ -14,6 +14,7 @@
 		ADB36F1426E7230A00F94744 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB36F1326E7230A00F94744 /* SideMenuView.swift */; };
 		ADB36F1926E7235800F94744 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB36F1826E7235800F94744 /* SideMenuHeaderView.swift */; };
 		ADB36F1B26E7238000F94744 /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB36F1A26E7238000F94744 /* SideMenuOptionView.swift */; };
+		ADB36F1D26E723EF00F94744 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB36F1C26E723EF00F94744 /* SideMenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ADB36F1326E7230A00F94744 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		ADB36F1826E7235800F94744 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 		ADB36F1A26E7238000F94744 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
+		ADB36F1C26E723EF00F94744 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		ADB36F1726E7232E00F94744 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ADB36F1C26E723EF00F94744 /* SideMenuViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				ADB36F0726E71FC700F94744 /* HomeView.swift in Sources */,
 				ADB36F1926E7235800F94744 /* SideMenuHeaderView.swift in Sources */,
 				ADB36F1B26E7238000F94744 /* SideMenuOptionView.swift in Sources */,
+				ADB36F1D26E723EF00F94744 /* SideMenuViewModel.swift in Sources */,
 				ADB36F0526E71FC700F94744 /* swift_side_menuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
